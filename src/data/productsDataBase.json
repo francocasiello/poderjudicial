@@ -2467,5 +2467,21 @@
   "discount": null,
   "image": null,
   "otracosa": "buenas"
+ },
+ {
+  "id": 182,
+  "autos": "CFN C/ CARDIGNI FRANCO S/ EJECUTIVO",
+  "cuij": "21-02923254-4",
+  "demanda": "125/2018",
+  "demandado": "GUSTAVO LOPEZ",
+  "monto": "123.213",
+  "cedComparecer": "215/15",
+  "fechaRebeldia": "2021-11-28",
+  "cedRebeldia": "12321",
+  "fechaCitacion": "30 de Noviembre de 2021",
+  "price": null,
+  "discount": null,
+  "image": null,
+  "otracosa": "buenas"
  }
 ]
