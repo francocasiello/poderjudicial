@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head-->
+    <%- include("./partials/head.ejs", { tituloPagina: "Carrito de compras"}) %>
+<body>
+     <!-- header-->
+     <%- include("./partials/header.ejs") %>
+
+    <main>
+    <section class = "login">
+         <h2>
+            CARRITO DE COMPRAS <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </h2>
+          <h3>
+           Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!
+        </h3>
+    </section>
+    <section class = carrito>
+        <div class = productocarrito1>
+            <img src = "./images/products/ficus.jpg" class= "producto1">
+            <h3>Nombre del producto</h3>
+            <h4>-  x1  +</h4>
+            <i class="fas fa-trash-alt"></i>
+            <h5>Subtotal</h5>
+            <h6>$450</h6>
+        </div>
+        <div class = productocarrito1>
+            <img src = "./images/products/ficus.jpg" class= "producto1">
+            <h3>Nombre del producto2</h3>
+            <h4>-  x3  +</h4>
+            <i class="fas fa-trash-alt"></i>
+            <h5>Subtotal</h5>
+            <h6>$1050</h6>
+        </div>
+        <div class = productocarrito1>
+            <img src = "./images/products/ficus.jpg" class= "producto1">
+            <h3>Nombre del producto3</h3>
+            <h4>-  x1  +</h4>
+            <i class="fas fa-trash-alt"></i>
+            <h5>Subtotal</h5>
+            <h6>$150</h6>
+        </div>
+        <div class = productocarrito2>
+         <h6>
+            Total: $1.650
+        </h6> 
+        <h6>
+            Vaciar carrito
+        </h6> 
+        <h6>
+            Finalizar compra
+        </h6> 
+        </div>
+    </section>
+    </main>
+
+
+     <!-- footer-->
+     <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

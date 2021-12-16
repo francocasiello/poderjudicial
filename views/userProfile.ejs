@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head-->
+    <%- include("./partials/head.ejs", { tituloPagina: "Log in"}) %>
+<body>
+    <!-- header-->
+    <%- include("./partials/header.ejs") %>
+
+    <main>
+    <section class = "login">
+         <h2>
+            Bienvenido <%= user.fullName %>
+        </h2>
+          <h3>
+           Tu email es: <%= user.email %>
+        </h3>
+        <br>
+        <h3>
+        <a class="boton-eliminar" href = "/user/logout">LOGOUT</a>
+        </h3>   
+        <br>
+        <img class="profilePicture" src="/images/avatars/avatar-1638750631205.jpg" alt="Tu imagen de perfil">
+    </section>
+    </main>
+
+
+    <!-- footer-->
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

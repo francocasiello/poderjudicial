@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head-->
+    <%- include("./partials/head.ejs", { tituloPagina: "Edita tu Producto"}) %>
+<body>
+     <!-- header-->
+     <%- include("./partials/header.ejs") %>
+
+    <main>
+    <section class = "login">
+        <h2 class = tituloproducto>
+            EDITA EL PRODUCTO: <%= productToEdit.name %>
+        </h2>
+      </section>
+    
+    <section class = formularioEditar>
+        <div class = imagenproducto>
+            <img src = "/images/products/<%= productToEdit.image %>" class= "Imagen del <%= productToEdit.name %>">
+        </div>
+        <div class = formulario>
+            <form action="/products/<%= productToEdit.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                <!-- <form action="/" method="GET" class="formulario-registracion">-->
+                    <div class = "control-formulario">
+                        <input type="text" name="name" placeholder="Nombre del Producto" minlength="2" value="<%= productToEdit.name %>" class="control">
+                        <span class="feedback"></span>
+                    </div>
+                    <div class = "control-formulario">
+                        <input type="textarea" rows="20" name="description" placeholder="Descripción" value="<%= productToEdit.description %>" class="control" >
+                    </div>
+                    <div class = "control-formulario">
+                        <label>Subir imagen:</label></div>
+                        <div class = "control-formulario"> 
+                            <label class= boton-formulario  style = "color: white" for = "image">Elegi tu foto</label>
+                            <input type="file" name ="image" id = "image" accept=".jpg " multiple>
+                         </div>
+                    <div class = "control-formulario">
+                        <input type="number" name="price" placeholder="Precio" class="control" value="<%= productToEdit.price %>">
+                    </div>
+                    <div class = "control-formulario">
+                        <p>Categoría</p>
+                        <div class = "control-tipoplanta">
+                        <label>Interior:
+                        <input type="checkbox" name="categorias" value="category" id = "interior" ></label>
+                        <label>Exterior:
+                        <input type="checkbox" name="categorias" value="category" id = "exterior"></label>
+                        <label>Otro:
+                        <input type="checkbox" name="categorias" value="category" id = "otro"></label>
+                     </div>
+                     <div class = "control-formulario">
+                        <p>Tamaño</p>
+                        <div class = "control-tipoplanta">
+                        <select>
+                            <option value="22">22cm</option>
+                            <option value="24">24cm</option>
+                            <option value="26">26cm</option>
+                        </select>
+                     </div>
+                     </div>
+                    <button type="submit" class="boton-formulario">Modificar</button>
+                    <button type="reset" class="boton-formulario">Resetear</button>
+                 </form>
+                 <form action="/products/<%= productToEdit.id %>?_method=DELETE" method="POST" >
+                    <button type="submit" class="boton-eliminar">ELIMINAR</button>
+                    </form>
+            </div>
+        </div>
+       </section>
+    </main>
+
+
+       <!-- footer-->
+       <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

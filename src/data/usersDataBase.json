@@ -1,0 +1,100 @@
+[
+ {
+  "id": 1,
+  "fullName": "Franco Casiello",
+  "direction": "Mendoza 1116",
+  "password": "",
+  "email": "francocasiello@gmail.com",
+  "avatar": "default.png"
+ },
+ {
+  "id": 2,
+  "fullName": "Luciana Perez",
+  "direction": "Balcarce 1088",
+  "password": "",
+  "email": "lulaperez@gmail.com",
+  "avatar": "default.png"
+ },
+ {
+  "id": 3,
+  "fullName": "Gabriela Riva",
+  "direction": "Oroño 124",
+  "password": "",
+  "email": "griva@gmail.com",
+  "avatar": "default.png"
+ },
+ {
+  "id": 4,
+  "fullName": "Nicolas Cardigni",
+  "direction": "San Juan 2345",
+  "password": "",
+  "email": "nico_cardito@yahoo.com",
+  "avatar": "default.png"
+ },
+ {
+  "id": 5,
+  "fullName": "Alejandro Pinarello",
+  "direction": "Godoy 500 4C",
+  "password": "",
+  "email": "alepita@gmail.com",
+  "avatar": "default.png"
+ },
+ {
+  "id": 6,
+  "nafullNameme": "Florencia Milano",
+  "direction": "Pueyrredon 212",
+  "password": "",
+  "email": "f_milano@gmail.com",
+  "avatar": "default.png"
+ },
+ {
+  "id": 7,
+  "fullName": "Belen Buzey",
+  "direction": "Italia 2420",
+  "password": "",
+  "email": "belubuzey@gmail.com",
+  "avatar": "default.png"
+ },
+ {
+  "id": 8,
+  "fullName": "Lucas Gotlieb",
+  "direction": "Buenos Aires 43 P4",
+  "password": "",
+  "email": "luquitasgotlieb@gmail.com",
+  "avatar": "default.png"
+ },
+ {
+  "id": 9,
+  "fullName": "Rafael Menossi",
+  "direction": "Viamonte 2432 2E",
+  "password": "",
+  "email": "rmenossi_facha@gmail.com",
+  "avatar": "default.png"
+ },
+ {
+  "id": 10,
+  "fullName": "Bruno Fantin",
+  "direction": "Cordoba 748 9 D",
+  "password": "",
+  "email": "bfantin_nob@gmail.com",
+  "avatar": "default.png"
+ },
+ {
+  "id": 11,
+  "fullName": "Luciana M Perez",
+  "email": "francocasiellasdo@gmaail.comasdasas",
+  "fecha": "2021-02-02",
+  "direction": "asdasd",
+  "password": "$2a$10$lAPBb4i9JgCaB9iuveP1xOknoiU.Phbof06.p15g0ZDF/P8UAjX7O",
+  "avatar": "avatar-1638674211632.jpg"
+ },
+ {
+  "id": 12,
+  "fullName": "Franco Clarabello",
+  "email": "fcasiello@gmail.com",
+  "birthday": "2021-11-28",
+  "direction": "asdasd",
+  "password": "$2a$10$r0o5zOp859R9o/tVD05DJ.Tky2D78QiH0XvRu6TJ99WqN9cIljr2a",
+  "avatar": "avatar-1638675333658.jpg"
+ }
+]

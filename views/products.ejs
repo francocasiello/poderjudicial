@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head-->
+    <%- include("./partials/head.ejs", { tituloPagina: "Detalle de producto"}) %>
+<body>
+     <!-- header-->
+     <%- include("./partials/header.ejs") %>
+     
+      <main>
+        <% products.forEach((prod) => { %>
+            <div class = seccionproducto>
+                
+            
+            
+            <div class = imagenproducto>
+                <a href="/products/<%= prod.id %>"><img src = "/images/products/<%= prod.image %>" class= "producto1"></a>
+            </div>
+            <div class = datosproducto>
+                <a href="/products/<%= prod.id %>"> <h2 class = tituloproducto>
+                        <%= prod.name %>
+                    </h2></a>
+                    <a href="/products/<%= prod.id %>"> <h5> MAS INFORMACIÓN </h5> </a>
+                     <div class = cantidad>
+                         <div>
+                        <h5>
+                            CANTIDAD:
+                         </h5>
+                        </div>
+                        <div>
+                         <form action="/" method="GET" class="formulario-cantidad">
+                            <div class = "control-formulario">
+                                <input type="text" name="cantidad" placeholder="1" class="control" required>
+                                <span class="feedback"></span> </div>
+                            </form>
+                        </div>
+                        <div>
+                        <h6>
+                        AGREGAR AL CARRITO
+                        </h6> 
+                    </div>
+                    </div>
+                     
+            </div>
+           
+        </div>
+  
+        <% }) %>
+    </main>
+
+
+      <!-- footer-->
+      <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head-->
+    <%- include("./partials/head.ejs", { tituloPagina: "Nuevo producto"}) %>
+<body class = "wallpaper">
+     <!-- header-->
+     <%- include("./partials/header.ejs") %>
+<br>
+    <main>
+        <section class = tipoDeJuicio>
+            <div class = formulario>
+                <p>PAGARE A DIA FIJO CON INTERESES PUNITORIOS</p>
+            </div>
+        </section>
+        <section class = formulario1>
+        <div class = formulario>
+            <form action="/products" method="POST" class="formulario-registracion" enctype="multipart/form-data">
+                    <div class = "control-formulario">
+                    <input type="text" name="autos" placeholder="Autos" class="control" minlength="2" required>
+                    <span class="feedback"></span>
+                     </div>
+                    <div class = "control-formulario">
+                    <input type="text" name="cuij" placeholder="CUIJ" class="control" minlength="8" required>
+                    <span class="feedback"></span>
+                     </div>
+                     <div class = "control-formulario">
+                        <input type="text" name="demanda" placeholder="Cargo de escrito de demanda" class="control" minlength="2" required>
+                        <span class="feedback"></span>
+                         </div>
+                    <div class = "control-formulario">
+                        <input type="text" name="demandado" placeholder="Demandado" class="control" minlength="2" required>
+                        <span class="feedback"></span>
+                    </div>
+                    <div class = "control-formulario">
+                        <input type="number" name="monto" placeholder="Monto demandado" class="control" step=".01" required>
+                    </div>                   
+                    <div class = "control-formulario">
+                        <input type="text" name="cedComparecer" placeholder="Cargo Nº de Cédula comparecer" class="control" required>
+                    </div>
+                    <div class = "control-formulario">
+                        <label for = "fechaRebeldia">Rebeldía</label>
+                        <input type="date" name="fechaRebeldia" placeholder="Notificación rebeldia" class="control" required>
+                    </div>
+                    <div class = "control-formulario">
+                        <input type="text" name="cedRebeldia" placeholder="Cargo Nº de Cédula rebeldia" class="control" required>
+                    </div>
+                    <div class = "control-formulario">
+                        <label for = "fechaCitacion">Citación de remate</label>
+                        <input type="date" name="fechaCitacion" placeholder="Citación de remate" class="control" required>
+                    </div>
+                    <div class = botones> 
+                        <button type="reset" class="boton-formulario">RESETEAR</button>
+                        <button type="submit" class="boton-formulario">RESOLVER</button>
+                    </div>
+            </form>
+        </div>
+    </section>
+    </main>
+
+
+  </body>
+</html>

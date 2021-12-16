@@ -1,0 +1,1 @@
+No estamos haciendo reuniones ya que mis compañeros quedaron atrasados y estan viendo como poder ponerse al dia.

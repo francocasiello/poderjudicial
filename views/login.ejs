@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- head-->
+    <%- include("./partials/head.ejs", { tituloPagina: "Log in"}) %>
+<body>
+    <!-- header-->
+    <%- include("./partials/header.ejs") %>
+
+    <% if (locals.errors) { %>                        
+        <% for( let oneError in errors) { %>
+        <% } %>
+    <% } %>
+
+    <main>
+    <section class = "login">
+         <h2>
+            LOG IN
+        </h2>
+          <h3>
+           Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!
+        </h3>
+    </section>
+    <section class = formulariologin>
+        <div class = formulario>
+                <!-- FORMULARIO -->
+                <!--<form action="/crear-producto" method="POST" class="formulario-registracion">-->
+                <form action="/user/login" method="POST" class="formulario-registracion">
+                <div class = "control-formulario">
+                    <input type="text" name="email" placeholder="Email" class="control" minlength="2" required>
+                    <span class="feedback"></span>
+                    <% if (locals.errors && errors.email) { %>                        
+                        <p class = errores><%= errors.email.msg %></p>
+                    <% } %>
+                </div>
+                <div class = "control-formulario">
+                    <input type="password" name ="password"  placeholder= "Contraseña" class ="control" required>
+                    <% if (locals.errors && errors.password) { %>                        
+                        <p class = errores><%= errors.password.msg %></p>
+                    <% } %>
+                </div>
+                 <div class= "olvidaste">
+                     <label class="form-check-input">
+                    <input type="checkbox" class= "form-check-input" name= "remember_user"> Recordar Usuario
+                    </label>
+                </div>
+                <button type="submit" class="boton-formulario-enviar">Enviar</button>
+                </form>
+        </div>
+         <div class = imagenformulario>
+
+        </div>
+    </section>
+    </main>
+
+
+    <!-- footer-->
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>
