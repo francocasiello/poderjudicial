@@ -5,9 +5,10 @@ const router = express.Router();
 // Aća nos falta traer el controller
 
 const mainController = require("../controllers/mainController");
+const productsController = require("../controllers/productsController");
 
 // Acá definimos las rutas
-router.get('/', mainController.index);
+router.get('/', productsController.create);
 router.get("/productCart", mainController.productCart);
 router.get("/index", mainController.index);
 //router.get("/productDetail", mainController.productDetail);

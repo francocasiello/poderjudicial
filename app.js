@@ -43,9 +43,9 @@ app.set("view engine", "ejs");
 app.set("views", "views");
 
 
-app.listen(3000, () => {
-    console.log("///////////////TODO FUNCIONA!//////////////");
-});
+app.listen(process.env.PORT || 3000, function () {
+  console.log("TODO FUNCIONAAAAAAAAAA 3000");
+})
 
 
 const mainRoutes = require("./src/routes/mainRoutes");
