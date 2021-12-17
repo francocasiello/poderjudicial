@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: 'Rosario', sans-serif;
+    text-decoration:none;
+    font-style: normal;
+
+    }
+
+body {
+    margin: 0px;
+    width: 100%;
+}
+
+.wallpaper {
+    background-image: url("../images/Wallpaper.jpg");
+    background-repeat: repeat;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+}
+
+.logotitulo {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.904);
+    padding: 5px;
+    margin: auto;
+    color: white;
+    justify-content: flex-end;
+    text-decoration: none;
+    padding-right: 20px;
+    transition: all 1500ms;    
+}
+
+.logotitulo:hover {
+    background-color: rgba(0, 0, 0, 0.048);
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: black
+}
+
+
+.sentencia {
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    background: white;
+    border-radius: 1%;
+    box-shadow: 0px 20px 20px rgb(0, 0, 0);
+    padding: 5px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 900px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cuerpoSentencia {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logoPJ {
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.cuerpoSentencia p {
+    width: 80%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cuerpoSentencia .auto {
+    width: 80%;
+    font-family: 'Times New Roman', Times, serif;
+    text-indent: 0px;
+    font-weight: bolder;
+    text-transform: uppercase
+}
+
+.textoSentencia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.5
+   }
+
+/**.logotitulo {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    background-color:rgba(255, 254, 254, 0.904);
+    border-radius: 2%;
+    box-shadow: 0px 20px 20px rgb(153, 158, 155);
+    padding: 5px;
+    margin: auto;
+    color: black;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+/****EDITAR ****/
+.formularioEditar {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    }
+
+/******* LOGIN *****/
+
+
+.tipoDeJuicio {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    background: white;
+    border-radius: 4%;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.767);
+    padding: 5px;
+    margin: auto;
+    max-width: 500px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    font-weight: bolder;
+    text-align: center;
+    color:rgba(22, 18, 36, 0.95)
+   }
+
+.formulario1 {
+    display: flex;
+    height: 100%;
+    width: 90%;
+    background: white;
+    border-radius: 2%;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.767);
+    padding: 20px;
+    margin: auto;
+    max-width: 500px;
+    margin-bottom: 20px;
+   }
+
+.formulario {
+    width: 100%;
+    height: 100%;
+}
+
+.control-formulario{
+    justify-content: center;
+    display: flex;
+    color: black;
+    text-shadow: none;
+}
+
+.control-formulario label{
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    display: block;
+    text-shadow: none;
+    color:rgba(22, 18, 36, 0.95)
+}
+
+.control-formulario{
+    margin-bottom: 15px;
+    display: block;
+    font-weight:800;
+}
+
+.control-tipoplanta label{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.control-formulario p {
+    margin-bottom: 25px;
+}
+
+.control {
+    padding: 8px;
+        box-shadow: 0px 4px 4px rgb(224 231 226);
+        border: none;
+        border-radius: 5px;
+        color: black;
+        font-weight: bolder;
+        width: 100%;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boton-formulario {
+    background-color: rgba(12, 9, 41, 0.205);
+    width: 100px;
+    height: 25px;
+    font-weight:900;
+    color: black;
+    border: none;
+    font-size: 12px;
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgb(224, 231, 226);
+    transition: all 400ms;
+}
+
+.boton-formulario:hover {
+    background-color: #03626e;
+    color: white;
+ }
+
+
+ .boton-formulario-resetear {
+    background-color: rgba(12, 9, 41, 0.205);
+    width: 100px;
+    height: 25px;
+    font-weight:900;
+    color: black;
+    border: none;
+    font-size: 12px;
+    margin: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgb(224, 231, 226);
+    transition: all 400ms;
+}
+
+.boton-formulario-resetear:hover {
+    background-color: #522020;
+    color: white;
+ }
+
+.control-formulario-label .boton-formulario {
+    color: white;
+}
+
+
+
