@@ -33,7 +33,11 @@
                     </div>
                     <div class = "control-formulario">
                         <input type="number" name="monto" placeholder="Monto demandado" class="control" step=".01" required>
-                    </div>                   
+                    </div>                        
+                    <div class = "control-formulario">
+                        <label for = "vencimientoPagare">Vencimiento Pagaré</label>
+                        <input type="date" name="vencimientoPagare" placeholder="vencimientoPagare" class="control" required>
+                    </div>
                     <div class = "control-formulario">
                         <input type="text" name="cedComparecer" placeholder="Cargo Nº de Cédula comparecer" class="control" required>
                     </div>
@@ -49,7 +53,7 @@
                         <input type="date" name="fechaCitacion" placeholder="Citación de remate" class="control" required>
                     </div>
                     <div class = botones> 
-                        <button type="reset" class="boton-formulario">RESETEAR</button>
+                        <button type="reset" class="boton-formulario-resetear">RESETEAR</button>
                         <button type="submit" class="boton-formulario">RESOLVER</button>
                     </div>
             </form>

@@ -50,7 +50,8 @@ app.listen(process.env.PORT || 3000, function () {
 
 const mainRoutes = require("./src/routes/mainRoutes");
 const productsRoutes = require('./src/routes/productsRoutes');
-const userRoutes = require("./src/routes/userRoutes")
+const userRoutes = require("./src/routes/userRoutes");
+const nodemon = require('nodemon');
 
 app.use("/", mainRoutes);
 app.use('/products', productsRoutes);

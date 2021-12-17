@@ -77,21 +77,23 @@ const controller = {
       // ✓ Acceder a nuestro archivo JSON
       // ✓ Leer los datos y convertirlos en un array para modificarlo
       // Leer los datos que vienen en la request (req.body)
-      const fecha =(req.body.fechaCitacion).split("-")
+      const fechaCita =(req.body.fechaCitacion).split("-");
+      const vencimientoPagare = (req.body.vencimientoPagare).split("-");
+      const fechaRebeldia = (req.body.fechaRebeldia).split("-");
       const MESES = [
         "Nada",
-        "Enero",
-        "Febrero",
-        "Marzo",
-        "Abril",
-        "Mayo",
-        "Junio",
-        "Julio",
-        "Agosto",
-        "Septiembre",
-        "Octubre",
-        "Noviembre",
-        "Diciembre",
+        "enero",
+        "febrero",
+        "marzo",
+        "abril",
+        "mayo",
+        "junio",
+        "julio",
+        "agosto",
+        "septiembre",
+        "octubre",
+        "noviembre",
+        "diciembre",
       ];      
       const newProduct = {
         id: products[products.length - 1].id + 1,
@@ -103,7 +105,9 @@ const controller = {
         otracosa: "buenas",
         autos: (req.body.autos).toUpperCase(),
         monto: Number(req.body.monto).toLocaleString(),
-        fechaCitacion: fecha[2] + " de " + (MESES[fecha[1]]) + " de " + fecha [0]
+        fechaCitacion: fechaCita[2] + " de " + (MESES[fechaCita[1]]) + " de " + fechaCita [0],
+        vencimientoPagare: vencimientoPagare[2] + " de " + (MESES[vencimientoPagare[1]]) + " de " + vencimientoPagare [0],
+        fechaRebeldia: fechaRebeldia[2] + " de " + (MESES[fechaRebeldia[1]]) + " de " + fechaRebeldia [0]
       };
       // Modificar el arreglo para agregar el nuevo producto
       const newProductList = [...products, newProduct];
