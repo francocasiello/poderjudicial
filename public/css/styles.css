@@ -212,12 +212,13 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
     box-shadow: 0px 4px 4px rgb(224, 231, 226);
-    transition: all 400ms;
+    transition: all 800ms;
 }
 
 .boton-formulario:hover {
     background-color: #03626e;
     color: white;
+    width: 150px;
  }
 
 
@@ -239,6 +240,7 @@ body {
 .boton-formulario-resetear:hover {
     background-color: #522020;
     color: white;
+    width: 150px;
  }
 
 .control-formulario-label .boton-formulario {
